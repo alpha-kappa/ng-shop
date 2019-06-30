@@ -1,0 +1,7 @@
+<p>showcase works!</p>
+<input type="button" (click)="getProducts()" value="Reload Products">
+<ul *ngIf="products.length">
+    <li *ngFor="let product of products">
+        <app-product-card [product]="product"></app-product-card>
+    </li>
+</ul>
